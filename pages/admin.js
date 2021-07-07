@@ -197,14 +197,14 @@ const Admin = () => {
   return (
     <>
       <Head>
-        <title>Moduloose Admin</title>
+        <title>Moduloose - Admin Page</title>
         <meta name="description" content="Moduloose Communication Modules App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <Row>
           <Col id="selectors" sm={3}>
-            <h1 className="p-2">Moduloose Admin</h1>
+            <h1 className="p-2">Modul<span className="text-danger">oo</span>se Adm<span className="text-danger">i</span>n</h1>
             {(data.length > 0) && data.map(clss =>
               <ClassAccordion key={clss.id} clss={clss} exportSelect={(mod) => handleSelectMod(mod)} />
             )}

@@ -2,8 +2,10 @@ import { ListGroup } from "react-bootstrap";
 
 
 const Downloads = ({ jsonData }) => {
+
   const exportToJson = () => {
-    let filename = "export.json";
+    let date = new Date
+    let filename = "ModulesFile-" + date.toISOString();
     let contentType = "application/json;charset=utf-8;";
     if (window.navigator && window.navigator.msSaveOrOpenBlob) {
       var blob = new Blob([decodeURIComponent(encodeURI(JSON.stringify(jsonData)))], { type: contentType });
