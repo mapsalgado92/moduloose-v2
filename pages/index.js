@@ -22,13 +22,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Moduloose</title>
+        <title>Moduloose - Communication Modules</title>
         <meta name="description" content="Moduloose Communication Modules App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Row className="mb-0">
-          <Col id="selectors" sm={3}>
+      <main className="main">
+        <Row className="m-0">
+          <Col id="selectors" className="selector-column" sm={3}>
             <h1 className="px-2 mb-0">Modul<span className="text-danger">oo</span>se</h1>
             {(data.length > 0) && data.map(clss =>
               <ClassAccordion key={clss.id} clss={clss} exportSelect={(mod) => { setViewer(mod.value) }} />

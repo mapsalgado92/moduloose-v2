@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-  font-family: 'Roboto'
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+.selector-column {
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
